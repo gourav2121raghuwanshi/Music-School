@@ -1,3 +1,12 @@
+// {
+//   "extends": ["next/core-web-vitals", "next/typescript"]
+// }
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "error", // Disallow usage of `any` explicitly
+    "no-var": "error", // Disallow usage of `var`, enforce `let` or `const`
+    "prefer-const": "warn", // Suggest `const` if variables are not reassigned
+    "@typescript-eslint/explicit-module-boundary-types": "off" // Optional: Turn off requiring explicit return types in functions
+  }
 }
